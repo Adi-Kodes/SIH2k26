@@ -1,5 +1,5 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { ChallengeCard } from "../components/UI";
+import { ChallengeCard } from "./components/UI";
 
 export default function DistrictDetail(){const {district}=useParams();return <><section className="page-hero compact"><span className="eyebrow light">DISTRICT IMPACT</span><h1>{district}</h1><p>Innovation activity, challenges and solutions in {district}, Jharkhand.</p></section><section className="section"><div className="stats-grid"><div className="stat-card"><b>186</b><span>Challenges</span></div><div className="stat-card"><b>42</b><span>Solutions</span></div><div className="stat-card"><b>56</b><span>Active Teams</span></div><div className="stat-card"><b>18</b><span>Institutions</span></div></div><h2 className="mt">Local Challenges</h2><div className="card-grid three"><ChallengeCard location={`${district}, Jharkhand`}/><ChallengeCard id="2" category="Education" title="Digital Learning Access" location={`${district}, Jharkhand`}/><ChallengeCard id="3" category="Agriculture" title="Farmer Market Access" location={`${district}, Jharkhand`}/></div></section></> }

@@ -1,7 +1,7 @@
 import React from "react";
 import { ArrowRight, Users, GraduationCap, Building2, Lightbulb, BarChart3, Leaf, HeartPulse, Droplets, Wheat, Accessibility, Landmark } from "lucide-react";
 import { Link } from "react-router-dom";
-import { SectionTitle, Stat, ChallengeCard, SolutionCard } from "../components/UI";
+import { SectionTitle, Stat, ChallengeCard, SolutionCard } from "./components/UI";
 
 const categories = [
   ["Agriculture", Wheat], ["Water Management", Droplets], ["Healthcare", HeartPulse],

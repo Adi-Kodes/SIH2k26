@@ -2,24 +2,24 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 
-import Home from "./pages/Home";
-import Challenges from "./pages/Challenges";
-import ChallengeDetail from "./pages/ChallengeDetail";
-import SubmitChallenge from "./pages/SubmitChallenge";
-import Solutions from "./pages/Solutions";
-import SolutionDetail from "./pages/SolutionDetail";
-import Programs from "./pages/Programs";
-import Partners from "./pages/Partners";
-import BecomePartner from "./pages/BecomePartner";
-import Impact from "./pages/Impact";
-import DistrictDetail from "./pages/DistrictDetail";
-import Stories from "./pages/Stories";
-import Resources from "./pages/Resources";
-import About from "./pages/About";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import Dashboard from "./pages/Dashboard";
-import SolutionSubmission from "./pages/SolutionSubmission";
+import Home from "./Home";
+import Challenges from "./Challenges";
+import ChallengeDetail from "./ChallengeDetail";
+import SubmitChallenge from "./SubmitChallenge";
+import Solutions from "./Solutions";
+import SolutionDetail from "./SolutionDetail";
+import Programs from "./Programs";
+import Partners from "./Partners";
+import BecomePartner from "./BecomePartner";
+import Impact from "./Impact";
+import DistrictDetail from "./DistrictDetail";
+import Stories from "./Stories";
+import Resources from "./Resources";
+import About from "./About";
+import Login from "./Login";
+import Register from "./Register";
+import Dashboard from "./Dashboard";
+import SolutionSubmission from "./SolutionSubmission";
 
 function App() {
   return (
@@ -48,5 +48,7 @@ function App() {
     </Routes>
   );
 }
+
+
 
 export default App;

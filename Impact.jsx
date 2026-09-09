@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { MapPin, Users, Building2, Lightbulb } from "lucide-react";
-import { Stat } from "../components/UI";
+import { Stat } from "./components/UI";
 
 const districts=["Ranchi","Dumka","Gumla","East Singhbhum","Palamu","Chatra","Latehar","Simdega"];
 
