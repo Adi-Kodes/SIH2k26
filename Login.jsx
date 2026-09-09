@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link,useNavigate} from 'react-router-dom';
-import {saveUser} from '../lib';
+import {saveUser} from './lib';
 export default function Login(){const nav=useNavigate(); const [form,setForm]=React.useState({email:'',password:''}); const [error,setError]=React.useState('');
  const submit=e=>{e.preventDefault(); if(!form.email||!form.password){setError('Enter your email/phone and password.');return} saveUser({name:form.email.split('@')[0]||'Innova8 User',email:form.email,role:'Participant'}); nav('/dashboard')};
  return <section className="auth-page"><form className="auth-card" onSubmit={submit}><span className="eyebrow">INNOVA8 JHARKHAND</span><h1>Welcome Back</h1><p>Sign in to manage challenges, solutions and collaborations.</p><label>Email / Phone<input value={form.email} onChange={e=>setForm({...form,email:e.target.value})} placeholder="you@example.com"/></label><label>Password<input value={form.password} onChange={e=>setForm({...form,password:e.target.value})} type="password" placeholder="••••••••"/></label>{error&&<div className="form-error">{error}</div>}<button className="primary-btn full" type="submit">Login</button><div className="or">OR</div><button type="button" className="outline-btn full" onClick={()=>{saveUser({name:'Demo Participant',email:'demo@innova8.local',role:'Student'});nav('/dashboard')}}>Use Demo Account</button><p>New to Innova8? <Link to="/register">Create an account</Link></p></form></section>}
