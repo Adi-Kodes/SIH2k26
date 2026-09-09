@@ -13,7 +13,7 @@ export function Stat({value,label}) {
   return <div className="stat"><strong>{value}</strong><span>{label}</span></div>;
 }
 
-export function ChallengeCard({id=1, image="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80", category="Water Management", title="Drinking Water Quality Monitoring", location="Gumla, Jharkhand", status="Open", teams="8 Teams", days="12 Days Left"}) {
+export function ChallengeCard({id=1, image="https://upload.wikimedia.org/wikipedia/commons/6/6d/Government_banner_of_Jharkhand.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail_unscaled&_=20220422090523", category="Water Management", title="Drinking Water Quality Monitoring", location="Gumla, Jharkhand", status="Open", teams="8 Teams", days="12 Days Left"}) {
   return <article className="card challenge-card">
     <img src={image} alt="" />
     <div className="card-body">
