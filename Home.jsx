@@ -94,10 +94,10 @@ export default function Home() {
       <div className="benefits">{["Discover Real Problems","Experiential Learning","Multidisciplinary Collaboration","Innovation","Industry Participation","Community Impact"].map((x,i)=><div className="benefit" key={x}><span>0{i+1}</span><b>{x}</b><p>Connect people, knowledge and resources around meaningful challenges.</p></div>)}</div>
     </section>
 
-    <section className="impact-banner">
+    {/* <section className="impact-banner">
       <div><span className="eyebrow light">STATEWIDE IMPACT</span><h2>Innovation across Jharkhand, district by district.</h2><p>Track challenges, teams, institutions and solutions across the state.</p><Link to="/impact" className="glass-btn">Explore Impact <ArrowRight size={16}/></Link></div>
       <div className="jh-map">JHARKHAND<span>24 DISTRICTS</span></div>
-    </section>
+    </section> */}
 
     <section className="cta-section">
       <span className="eyebrow">YOUR IDEA CAN MAKE A DIFFERENCE</span>
